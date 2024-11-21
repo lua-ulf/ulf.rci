@@ -1,0 +1,9 @@
+{
+  "gendocs": {
+    "tree_sitter_lua": {
+      "files": "lua/ulf/rci/init.lua,lua/ulf/rci/config.lua",
+      "app": "ulf.rci",
+      "output_path": "./doc"
+    }
+  }
+}

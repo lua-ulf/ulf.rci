@@ -1,0 +1,64 @@
+return {
+	_all = {
+		coverage = false,
+		lpath = "lua/?.lua;lua/?/init.lua",
+		pattern = "spec%.lua$",
+		-- lua = "luajit",
+		ROOT = { "spec/" },
+	},
+	default = {
+		tags = {
+			"tests",
+			"ulf.rci",
+			"ulf.rci.extractor",
+			"ulf.rci.patcher",
+			"ulf.rci.config",
+			"ulf.rci.runner",
+			"ulf.rci.util",
+		},
+		output = "htest",
+		verbose = true,
+		ROOT = { "spec/tests" },
+	},
+	tests = {
+		tags = { "tests", "unit" },
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+	["ulf.rci"] = {
+		tags = "ulf.rci",
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+	["ulf.rci.extractor"] = {
+		tags = "ulf.rci.extractor",
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+
+	["ulf.rci.util"] = {
+		tags = "ulf.rci.util",
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+	["ulf.rci.patcher"] = {
+		tags = "ulf.rci.patcher",
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+	["ulf.rci.config"] = {
+		tags = "ulf.rci.config",
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+	["ulf.rci.runner"] = {
+		tags = "ulf.rci.runner",
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+	["ulf.rci.writer"] = {
+		tags = "ulf.rci.writer",
+		ROOT = { "spec/tests" },
+		verbose = true,
+	},
+}
